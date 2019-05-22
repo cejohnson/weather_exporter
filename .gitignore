@@ -8,3 +8,6 @@
 
 # Ignore completion assists
 *.rope*
+
+.venv
+.idea

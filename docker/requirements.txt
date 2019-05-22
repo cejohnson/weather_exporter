@@ -1,4 +1,0 @@
-prometheus_client
-requests
-geopy
-backports.functools_lru_cache

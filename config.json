@@ -1,0 +1,14 @@
+{
+	"dark_sky_api_key": "<key>",
+	"locations": [{
+			"name": "Staten Island",
+			"latitude": 40.5773,
+			"longitude": -74.1505
+		},
+		{
+			"name": "JFK International Airport",
+			"latitude": 40.6421,
+			"longitude": -73.7810
+		}
+	]
+}

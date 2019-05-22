@@ -1,14 +1,9 @@
-version: '2'
+version: '3'
 services:
   weather_exporter:
-    build: ./docker
-    image: ${ORGANIZATION}/${CONTAINER}:${VERSION}
-    container_name: ${CONTAINER}
+    image: weather-exporter
+    container_name: weather-exporter
     ports:
       - 9265:9265
-    environment:
-      - DARK_SKY_API_KEY=${DARK_SKY_API_KEY}
-      - SCRAPE_INTERVAL=${SCRAPE_INTERVAL}
-      - CITIES=${CITIES}
     volumes:
-      - ./src/weather_exporter:/opt/weather_exporter
+      - ./config.json:/etc/weather_exporter/config.json
